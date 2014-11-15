@@ -40,7 +40,7 @@ angular.module('starter.controllers', [])
       { title: 'Angelo', id: 3, price: '2,2', evaluation: 2 }
   ];
         $scope.RepeatStar= function(){
-           // alert("ciao mondo");
+           alert("ciao mondo");
         };
 
 })

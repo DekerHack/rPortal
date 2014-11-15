@@ -56,6 +56,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+      .state('app.angelo', {
+
+      })
 
       .state('app.home', {
           url: "/home",
