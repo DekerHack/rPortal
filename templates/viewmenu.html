@@ -1,0 +1,25 @@
+<ion-view title="Menu">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+
+
+
+        <div class="list">
+              <a ng-repeat="playlist in playlists" class="item item-thumbnail-left" href="#/app/dettaglio-piatto">
+                  <img ng-click="RepeatStar()" src="{{playlist.src}}">
+                  <h2>{{playlist.title}} </h2>
+                  <p>Prezzo: {{playlist.price}}</p>
+                  <i class="icon ion-thumbsup">{{playlist.evaluation}}</i>
+                  <i class="icon ion-ios7-heart">{{playlist.evaluation}}</i>
+                  <i class="icon ion-happy">{{playlist.evaluation}}</i>
+              </a>
+
+        </div>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>

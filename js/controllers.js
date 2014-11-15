@@ -35,9 +35,9 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Pasta al pesto', id: 1, price: '2,3', evaluation: 4 },
-      { title: 'Pasta a forno', id: 2, price: '2,3', evaluation: 4 },
-      { title: 'Angelo', id: 3, price: '2,2', evaluation: 2 }
+    { title: 'Pasta al pesto', id: 1, price: '2,3', evaluation: 4 , src: 'img/no-photo.png'},
+      { title: 'Pasta a forno', id: 2, price: '2,3', evaluation: 4,  src: 'img/pizza2.jpg' },
+      { title: 'Angelo', id: 3, price: '2,2', evaluation: 2,  src: 'img/no-photo.png' }
   ];
         $scope.RepeatStar= function(){
            alert("ciao mondo");

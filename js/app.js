@@ -40,15 +40,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.browse', {
-      url: "/browse",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
-    })
-  
-  .state('app.home', {
       url: "/home",
       views: {
         'menuContent' :{
@@ -57,18 +48,36 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
   
-    .state('app.playlists', {
-      url: "/playlists",
+  .state('app.home', {
+      url: "/browse",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
+          templateUrl: "templates/browse.html"
+        }
+      }
+    })
+  
+    .state('app.viewmenu', {
+      url: "/viewmenu",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/viewmenu.html",
           controller: 'PlaylistsCtrl'
         }
       }
     })
-      .state('app.angelo', {
-
-      })
+  
+  .state('app.dettaglio-piatto', {
+      url: "/dettaglio-piatto",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/dettaglio-piatto.html",
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+  
+      
 
     .state('app.single', {
       url: "/playlists/:playlistId",
